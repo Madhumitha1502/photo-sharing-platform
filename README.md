@@ -1,5 +1,5 @@
 # PhotoStream Pro — Full Stack Photo Sharing Platform
-> **TrizenAI Technologies — Photo Sharing Platform **  
+> **TrizenAI Technologies — Full Stack Internship Challenge Deliverable**  
 > Candidate Submission | September 2026
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
@@ -79,7 +79,7 @@ The platform is pre-seeded with the operational state matching the specification
                                 │                         │
                                 ▼                         ▼
                    ┌────────────────────────┐ ┌─────────────────────────┐
-                   │    PostgreSQL Database │ │   Cloud Object Storage  │
+                   │     SQlite    Database │ │   Cloud Object Storage  │
                    │      (via Prisma)      │ │   (Cloudinary / S3)     │
                    │  - Users & Passwords   │ │  - High-res event photos│
                    │  - Events & Members    │ │  - Auto CDN thumbnails  │
@@ -242,4 +242,6 @@ npm test
 - **Watermarking:** Watermarks can be dynamically added via Cloudinary transformations before final high-res purchase.
 - **Expiration Dates:** Optional gallery self-destruct / expiry dates can be toggled by the Admin.
 - **ZIP Download:** Bulk download of all curated photos as a single compressed ZIP file.
-#
+#   p h o t o - s h a r i n g - p l a t f o r m 
+ 
+ 
