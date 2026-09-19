@@ -37,22 +37,22 @@ export default function HomePage() {
       <main className="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 flex flex-col justify-center">
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
-            <Sparkles className="w-3.5 h-3.5" /> Full Stack Internship Challenge Deliverable
+          <Camera className="w-3.5 h-3.5" /> PHOTO SHARING PLATFORM
           </div>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-            Collaborative Event Photography <br />
-            <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              With PIN-Protected Client Galleries
-            </span>
+            Capture. Curate. Share. <br />
+<span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+  Private Event Galleries Made Simple
+</span>
           </h1>
           <p className="mt-6 text-lg text-slate-400 leading-relaxed">
-            A production-ready platform designed for event photography teams. Photography crews collaboratively upload high-res photos, Admins curate the master collection, and customers instantly unlock their memories with a secure PIN — zero account signup required.
+            A collaborative photo platform for event teams to upload, organize, curate, and securely share memories with clients.
           </p>
 
           {/* Quick Demo Access Bar */}
           <div className="mt-10 p-6 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-2xl">
             <h3 className="text-sm font-semibold text-slate-300 uppercase tracking-wider mb-4">
-              Instant Demo Credentials & Quick Links
+              Explore the Platform
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
               {/* Admin Card */}
@@ -60,14 +60,14 @@ export default function HomePage() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-950/60 px-2 py-0.5 rounded border border-indigo-800/50">
-                      Lead Admin
+                      Admin Portal
                     </span>
                     <Shield className="w-4 h-4 text-indigo-400" />
                   </div>
                   <p className="text-xs text-slate-400 font-mono">admin@trizen.com</p>
                   <p className="text-xs text-slate-500 font-mono">AdminPassword123!</p>
                   <p className="text-xs text-slate-400 mt-2">
-                    Creates events, curates photos & publishes galleries with PIN.
+                   Manage events, team members, photo collections and client galleries.
                   </p>
                 </div>
                 <Link
@@ -83,14 +83,14 @@ export default function HomePage() {
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded border border-emerald-800/50">
-                      Team Member
+                     photographer
                     </span>
                     <Users className="w-4 h-4 text-emerald-400" />
                   </div>
                   <p className="text-xs text-slate-400 font-mono">photographer@trizen.com</p>
                   <p className="text-xs text-slate-500 font-mono">TeamPassword123!</p>
                   <p className="text-xs text-slate-400 mt-2">
-                    Uploads multiple batch photos to assigned events (Cannot publish).
+                    Upload and manage photos for assigned events.
                   </p>
                 </div>
                 <Link
@@ -101,12 +101,12 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              {/* Customer Gallery Card */}
+              {/* Client Gallery Card */}
               <div className="p-4 rounded-xl bg-slate-800/60 border border-slate-700/60 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-pink-400 bg-pink-950/60 px-2 py-0.5 rounded border border-pink-800/50">
-                      Customer Gallery
+                      Client Gallery
                     </span>
                     <KeyRound className="w-4 h-4 text-pink-400" />
                   </div>
@@ -115,7 +115,7 @@ export default function HomePage() {
                     Gallery PIN: <span className="font-mono text-pink-400 font-bold">482917</span>
                   </p>
                   <p className="text-xs text-slate-400 mt-2">
-                    Zero signup. Unlocks with PIN to view curated high-res photos.
+                   Access a private event gallery securely using a PIN — no account required.
                   </p>
                 </div>
                 <Link
@@ -137,7 +137,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-2">Cloud Object Storage</h3>
             <p className="text-sm text-slate-400">
-              Compliant with Section 4. High-resolution images are stored in dedicated cloud object storage (Cloudinary) with optimized CDN delivery. Binary data is never stored directly in the database.
+              High-resolution photos are securely stored in cloud object storage with optimized CDN delivery. Image files are never stored directly in the database.
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-2">Strict Role-Based Security</h3>
             <p className="text-sm text-slate-400">
-              Enforced at the API and Middleware layers. Team Members can only access assigned events and are strictly prevented with 403 Forbidden from publishing galleries or managing other users&apos; photos.
+              Role-based access ensures administrators and photographers only access the features and events they are authorized to manage.
             </p>
           </div>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-lg font-bold text-white mb-2">PIN-Protected Galleries</h3>
             <p className="text-sm text-slate-400">
-              Customers unlock their private albums effortlessly using an access PIN. PINs are securely hashed in the database with bcrypt and protected by brute-force rate limiting.
+              Clients can securely unlock their private galleries using a unique PIN. Access is protected with secure PIN storage and rate limiting.
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 bg-slate-950 py-6 text-center text-xs text-slate-500">
-        TrizenAI Technologies — Full Stack Internship Challenge
+        TrizenAI Technologies — MADHUMITHA V
       </footer>
     </div>
   );

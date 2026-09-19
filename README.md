@@ -79,7 +79,7 @@ The platform is pre-seeded with the operational state matching the specification
                                 │                         │
                                 ▼                         ▼
                    ┌────────────────────────┐ ┌─────────────────────────┐
-                   │     SQlite    Database │ │   Cloud Object Storage  │
+                   │    PostgreSQL Database │ │   Cloud Object Storage  │
                    │      (via Prisma)      │ │   (Cloudinary / S3)     │
                    │  - Users & Passwords   │ │  - High-res event photos│
                    │  - Events & Members    │ │  - Auto CDN thumbnails  │
