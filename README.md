@@ -86,7 +86,7 @@ The platform is pre-seeded with the operational state matching the specification
                    │  - Photo Metadata      │ │  - Secure signed uploads│
                    │  - Galleries & PIN Hash│ │                         │
                    └────────────────────────┘ └─────────────────────────┘
-```
+```m
 
 ### Architecture Highlights
 - **Binary / Database Separation:** Compliant with Section 4. Binary images are **never stored in the database**. They are stored in Cloud Object Storage (Cloudinary/S3-compatible) with fast CDN delivery. The database contains only lightweight metadata (`id`, `event_id`, `uploaded_by`, `filename`, `storage_location`, `file_size`, `created_at`).
