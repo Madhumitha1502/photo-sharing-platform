@@ -1,5 +1,5 @@
 # PhotoStream Pro — Full Stack Photo Sharing Platform
-> **TrizenAI Technologies — Full Stack Internship Challenge Deliverable**  
+> **TrizenAI Technologies — Photo Sharing Platform **  
 > Candidate Submission | September 2026
 
 ![Project Status](https://img.shields.io/badge/Status-Completed-success)
@@ -79,7 +79,7 @@ The platform is pre-seeded with the operational state matching the specification
                                 │                         │
                                 ▼                         ▼
                    ┌────────────────────────┐ ┌─────────────────────────┐
-                   │     SQlite    Database │ │   Cloud Object Storage  │
+                   │    PostgreSQL Database │ │   Cloud Object Storage  │
                    │      (via Prisma)      │ │   (Cloudinary / S3)     │
                    │  - Users & Passwords   │ │  - High-res event photos│
                    │  - Events & Members    │ │  - Auto CDN thumbnails  │
